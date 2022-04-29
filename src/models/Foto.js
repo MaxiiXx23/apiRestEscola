@@ -25,8 +25,6 @@ export default class Foto extends Model {
             { sequelize })
 
         return this;
-    }
-    static associate(models) {
-        this.belongsTo(models.Aluno, { foreignKey: 'aluno_id'})
+        //adicionar um hook para adicionar o filname já com a url do servidor
     }
 }

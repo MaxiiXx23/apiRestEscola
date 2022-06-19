@@ -29,7 +29,12 @@ class TokenController {
         })
 
         return res.json({
-            token
+            token,
+            user:{
+                nome: user.nome,
+                id,
+                email
+            }
         })
 
     }
